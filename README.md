@@ -1,10 +1,6 @@
 # Medical-Legal LoRA Model Merging
 
-本仓库是“模型合并与知识复用”课程项目的提交版本。项目以 `Qwen/Qwen2.5-1.5B-Instruct` 为统一基座，分别训练医学和法律两个 LoRA 专家，并比较 Task Arithmetic、TIES、DARE-TIES 和 KnOTS-TIES 风格方法在双任务能力保留上的效果。
-
-完整实验报告见：
-
-- `MODEL MERGING WITH SVD TO TIE THE KNOTS.pdf`
+项目以 `Qwen/Qwen2.5-1.5B-Instruct` 为统一基座，分别训练医学和法律两个 LoRA 专家，并比较 Task Arithmetic、TIES、DARE-TIES 和 KnOTS-TIES 风格方法在双任务能力保留上的效果。
 
 ## 项目内容
 
@@ -23,35 +19,12 @@ Level 1 研究两个领域专家模型的合并：
 
 Level 2 复现 ICLR 2025 论文 *Model Merging with SVD to Tie the KnOTS* 的官方代码。
 
-- 官方代码目录：`external/knots`
+- 官方代码目录：`external/knots`，来源于 [KnOTS](https://github.com/gstoica27/KnOTS)。
 - 论文 PDF：`MODEL MERGING WITH SVD TO TIE THE KNOTS.pdf`
 - 复现设置：ViT-B/32 rank-16 KnOTS-TIES，使用官方发布的 8 个视觉任务 LoRA adapters，只评估 MNIST test。
 - 本地复现结果：MNIST normalized accuracy `68.9829`。
 - 论文 Table 1 参考值：MNIST normalized accuracy `68.9`。
 
-## 提交文件说明
-
-本提交保留以下内容：
-
-- 实验报告：`MODEL MERGING WITH SVD TO TIE THE KNOTS.pdf`
-- 源代码：`src/`
-- 运行脚本：`scripts/`
-- 配置文件：`configs/`
-- 环境文件：`environment.yml`、`requirements.txt`
-- 结果表：`results/tables/`
-- 结果图：`results/figures/`
-- 评测 summary：`results/raw_merged/*.summary.json`
-- Level 2 最小复现代码：`external/knots/`
-
-以下大文件没有随提交保留：
-
-- `adapters/`：训练得到的 LoRA adapter 权重。
-- `merged/`：合并后的 full model 权重。
-- 逐样本评测 CSV。
-- 外部 KnOTS 运行时下载的数据文件和生成的 CLIP head。
-- Hugging Face 模型缓存。
-
-这些文件体积较大，可以通过下面的命令重新生成。
 
 ## 目录结构
 
@@ -213,7 +186,7 @@ bash scripts/run_level2_knots_mnist.sh
 
 - `results/tables/level2_knots_mnist.csv`
 
-## 已提交结果文件
+## 结果文件
 
 主要表格：
 
@@ -246,4 +219,4 @@ Level 2 官方复现：
 | --- | --- | ---: | ---: | ---: |
 | KnOTS-TIES 8-merge | MNIST test | 68.5000 | 68.9829 | 68.9 |
 
-完整分析见 `MODEL MERGING WITH SVD TO TIE THE KNOTS.pdf`。
+Level 2 论文见 [论文链接](https://arxiv.org/abs/2410.19735)。

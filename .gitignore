@@ -29,3 +29,6 @@ results/raw_full/
 
 *.log
 environment_report.md
+
+*.pdf
+report.md
