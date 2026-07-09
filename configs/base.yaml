@@ -1,0 +1,38 @@
+project_root: /root/autodl-tmp/pro
+cache_dir: /root/autodl-tmp/hf-cache
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+seed: 42
+
+data:
+  medmcqa:
+    train: data/processed/medmcqa_train.jsonl
+    val: data/processed/medmcqa_val.jsonl
+    test: data/processed/medmcqa_test.jsonl
+    robustness: data/processed/medmcqa_robustness.jsonl
+  casehold:
+    train: data/processed/casehold_train.jsonl
+    val: data/processed/casehold_val.jsonl
+    test: data/processed/casehold_test.jsonl
+    robustness: data/processed/casehold_robustness.jsonl
+
+training:
+  max_seq_length: 1024
+  lora_r: 16
+  lora_alpha: 32
+  lora_dropout: 0.05
+  learning_rate: 0.0002
+  num_train_epochs: 2
+  per_device_train_batch_size: 2
+  gradient_accumulation_steps: 8
+  bf16: true
+  qlora: false
+
+merge:
+  task_arithmetic_lambdas:
+    - [0.5, 0.5]
+    - [0.7, 0.7]
+    - [1.0, 1.0]
+    - [1.2, 1.2]
+  ties_densities: [0.2, 0.4, 0.6, 0.8]
+  dare_ties_densities: [0.2, 0.4, 0.6]
+  dare_ties_seeds: [42, 43, 44]

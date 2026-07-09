@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "adapter": "adapters/legal_lora_full",
+  "input": "data/processed/medmcqa_test.jsonl",
+  "output": "results/raw_merged/legal_expert_medmcqa_test.csv",
+  "n": 2092,
+  "accuracy": 0.4058317399617591,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}

@@ -1,0 +1,11 @@
+{
+  "model": "merged/full_dare_ties_d0p4_s42",
+  "base_model": null,
+  "adapter": null,
+  "input": "data/processed/casehold_test.jsonl",
+  "output": "results/raw_merged/full_dare_ties_d0p4_s42_casehold_test.csv",
+  "n": 3600,
+  "accuracy": 0.6711111111111111,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}

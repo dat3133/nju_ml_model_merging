@@ -1,0 +1,7 @@
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+cache_dir: /root/autodl-tmp/hf-cache
+dtype: bf16
+batch_size: 8
+max_samples: null
+use_chat_template: true
+normalize_by_length: false

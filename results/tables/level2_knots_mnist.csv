@@ -1,0 +1,2 @@
+Representation,Sign Resolve Mode,Scaling Coeffs,Topk,Merge Method,Merging Type,Concat Across Output,Dare,Dare Pruning Coeffs,Mnist,Mnist Norm Acc,Average Acc,Average Norm Acc,Config Name,Eval Split
+svd-vector,sum_of_values,0.6,20,ties,mean,True,False,0.0,68.5,68.9828801611279,68.5,68.9828801611279,vitB_r16_knots_ties_8merge_mnist_eval,test

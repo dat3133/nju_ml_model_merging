@@ -1,0 +1,11 @@
+{
+  "model": "merged/full_ties_d0p6",
+  "base_model": null,
+  "adapter": null,
+  "input": "data/processed/casehold_val.jsonl",
+  "output": "results/raw_merged/full_ties_d0p6_casehold_val.csv",
+  "n": 3900,
+  "accuracy": 0.7356410256410256,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}

@@ -1,0 +1,11 @@
+{
+  "model": "merged/full_task_arithmetic_m1p2_l1p2",
+  "base_model": null,
+  "adapter": null,
+  "input": "data/processed/medmcqa_test.jsonl",
+  "output": "results/raw_merged/full_task_arithmetic_m1p2_l1p2_medmcqa_test.csv",
+  "n": 2092,
+  "accuracy": 0.49091778202676867,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}

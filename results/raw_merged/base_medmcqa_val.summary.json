@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "base_model": null,
+  "adapter": null,
+  "input": "data/processed/medmcqa_val.jsonl",
+  "output": "results/raw_merged/base_medmcqa_val.csv",
+  "n": 2091,
+  "accuracy": 0.4414155906264945,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}

@@ -1,0 +1,17 @@
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+train_file: data/processed/medmcqa_train.jsonl
+eval_file: data/processed/medmcqa_val.jsonl
+output_dir: adapters/medical_lora
+cache_dir: /root/autodl-tmp/hf-cache
+task_name: medmcqa
+max_seq_length: 1024
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+learning_rate: 0.0002
+num_train_epochs: 2
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8
+bf16: true
+qlora: false
+seed: 42

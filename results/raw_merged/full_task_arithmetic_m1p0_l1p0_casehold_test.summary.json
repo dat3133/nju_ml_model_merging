@@ -1,0 +1,11 @@
+{
+  "model": "merged/full_task_arithmetic_m1p0_l1p0",
+  "base_model": null,
+  "adapter": null,
+  "input": "data/processed/casehold_test.jsonl",
+  "output": "results/raw_merged/full_task_arithmetic_m1p0_l1p0_casehold_test.csv",
+  "n": 3600,
+  "accuracy": 0.8163888888888889,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}

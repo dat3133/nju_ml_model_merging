@@ -1,0 +1,25 @@
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+cache_dir: /root/autodl-tmp/hf-cache
+medical_adapter: adapters/medical_lora
+legal_adapter: adapters/legal_lora
+
+task_arithmetic:
+  lambdas:
+    - [0.5, 0.5]
+    - [0.7, 0.7]
+    - [1.0, 1.0]
+    - [1.2, 1.2]
+
+ties:
+  weights: [1.0, 1.0]
+  densities: [0.2, 0.4, 0.6, 0.8]
+
+dare_ties:
+  weights: [1.0, 1.0]
+  densities: [0.2, 0.4, 0.6]
+  seeds: [42, 43, 44]
+
+knots_ties:
+  weights: [1.0, 1.0]
+  density: 0.4
+  svd_rank: 16

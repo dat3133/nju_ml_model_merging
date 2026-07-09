@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "base_model": null,
+  "adapter": null,
+  "input": "data/processed/casehold_val.jsonl",
+  "output": "results/raw_merged/base_casehold_val.csv",
+  "n": 3900,
+  "accuracy": 0.5535897435897436,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}

@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "adapter": "adapters/medical_lora_full",
+  "input": "data/processed/medmcqa_val.jsonl",
+  "output": "results/raw_merged/medical_expert_medmcqa_val.csv",
+  "n": 2091,
+  "accuracy": 0.5662362505978001,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}

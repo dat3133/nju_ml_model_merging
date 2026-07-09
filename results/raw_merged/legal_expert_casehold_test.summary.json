@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "adapter": "adapters/legal_lora_full",
+  "input": "data/processed/casehold_test.jsonl",
+  "output": "results/raw_merged/legal_expert_casehold_test.csv",
+  "n": 3600,
+  "accuracy": 0.9127777777777778,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}

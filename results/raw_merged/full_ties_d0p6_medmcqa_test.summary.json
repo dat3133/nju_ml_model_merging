@@ -1,0 +1,11 @@
+{
+  "model": "merged/full_ties_d0p6",
+  "base_model": null,
+  "adapter": null,
+  "input": "data/processed/medmcqa_test.jsonl",
+  "output": "results/raw_merged/full_ties_d0p6_medmcqa_test.csv",
+  "n": 2092,
+  "accuracy": 0.5454110898661568,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}

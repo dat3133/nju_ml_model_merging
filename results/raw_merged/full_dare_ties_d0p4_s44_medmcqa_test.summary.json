@@ -1,0 +1,11 @@
+{
+  "model": "merged/full_dare_ties_d0p4_s44",
+  "base_model": null,
+  "adapter": null,
+  "input": "data/processed/medmcqa_test.jsonl",
+  "output": "results/raw_merged/full_dare_ties_d0p4_s44_medmcqa_test.csv",
+  "n": 2092,
+  "accuracy": 0.39627151051625237,
+  "normalize_by_length": false,
+  "use_chat_template": true
+}
